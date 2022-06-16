@@ -1,9 +1,24 @@
 import React from "react";
+import frases from "./Frases";
 
-export default function Phrase(){
-    return(
+function Escena(){
+    return (
         <div>
-            "El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial"
+        {
+            frases.map(frase => {
+                return(
+                    <div key={frase.id}>
+                     <p> {frase.text}</p>  
+                    </div>
+                )
+            })
+        }
         </div>
-    )
+        )   
 }
+
+
+export default Escena
+        
+
+    

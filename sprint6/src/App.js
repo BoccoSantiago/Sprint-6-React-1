@@ -1,9 +1,12 @@
 import React from 'react'
-import Phrase from './components/escena/Escena';
+import Escena from './components/escena/Escena';
+//import frases from "./Frases";
 
 function App() {
   return (
-    <Phrase/>
+    <div>
+      <Escena/>
+    </div>
   )
 }
 
