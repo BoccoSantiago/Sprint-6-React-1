@@ -1,15 +1,16 @@
 import React from "react";
 import frases from "./Frases";
+import {Border} from "./styled"
 
 function Escena(){
     return (
-        <div>
+        <div> 
         {
             frases.map(frase => {
                 return(
                     <div key={frase.id}>
-                     <p> {frase.text}</p>  
-                    </div>
+                    <Border>{frase.text}</Border>
+                    </div>  
                 )
             })
         }
