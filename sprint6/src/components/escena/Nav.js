@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-export function Nav(props){
+export default function Nav(props){
 
 return(   
     <div>
