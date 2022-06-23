@@ -13,7 +13,7 @@ export const Border = styled.p`
     padding: 10px;
     margin: auto;
     margin-top: 10px;
-    background: ${props => props.active ? "pink" : "blue"} 
+    background: ${props => props.active ? "pink" : "none"} 
     `
 export const ButtonsDiv = styled.div`
     button {

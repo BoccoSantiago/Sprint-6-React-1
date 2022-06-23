@@ -10,7 +10,7 @@ function Escena(props){
             frases.map(frase => {
                 return(
                     <div key={frase.id}>
-                    <Border active={true}>{frase.text}</Border>
+                    <Border active={props.numEscena === frase.id}>{frase.text}</Border>
                     </div>  
                 ) 
             })
