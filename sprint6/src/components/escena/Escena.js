@@ -1,8 +1,10 @@
 import React from "react";
 import frases from "./Frases";
-import {Border} from "./styled"
+import {Paragraph} from "./styled" 
+
 
 function Escena(props){
+    console.log(props)
 
     return (
         <div> 
@@ -10,8 +12,8 @@ function Escena(props){
             frases.map(frase => {
                 return(
                     <div key={frase.id}>
-                    <Border active={props.numEscena === frase.id}>{frase.text}</Border>
-                    </div>  
+                    <Paragraph active={props.numEscena === frase.id}>{frase.text}</Paragraph>
+                    </div> 
                 ) 
             })
         }

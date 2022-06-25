@@ -1,30 +1,37 @@
 import styled from 'styled-components'
 
-export const MainDiv = styled.div`
-    text-align: center;
+
+ export const Background = styled.div`
+
+    background-image: url("${(props) => props.image}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh
+
 `
 
-
-export const Border = styled.p`
+export const Paragraph = styled.p`
     border: 2px solid black;
     border-radius: 20px;
-    width: 95%;
+    width: 85vw;
     height: auto;
     padding: 10px;
     margin: auto;
-    margin-top: 10px;
-    background: ${props => props.active ? "pink" : "none"} 
+    margin-top: 15px;
+    background: ${props => props.active ? "pink" : "rgba(255, 255, 255, 0.7)"} 
     `
 export const ButtonsDiv = styled.div`
     button {
-        width: 49%;
-        height: auto;
+        width: 45%;
         padding: 10px;
-        margin-left: 5px;
+        margin: auto;
+        margin-top: 30px;
+        margin-right: 10px;
         cursor: pointer; 
-        justify-content: center;
         text-align: center;
         font-size: 20px;
+        font-weight: bold;
     }
    
 `
+
