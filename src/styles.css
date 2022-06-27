@@ -7,7 +7,8 @@
 body{
     height: 100vh;
     background-image: url("./img/space.jpg"); 
-    animation: bgTransition 60s linear infinite;
+    background-size: cover;
+    animation: bgTransition s linear infinite;
 }
 
 @keyframes bgTransition {
@@ -15,7 +16,7 @@ body{
         background-position: 0% 0%;
     }
     to {
-        background-position: 100% 50%;
+        background-position: 100% 100%;
     }
 }
 
@@ -25,7 +26,6 @@ body{
     color:rgb(255, 255, 255);
     text-shadow: 3px 3px 7px  rgb(24, 71, 180);
     margin-top: 15%;
-    
 }
 
 .main > button {
@@ -34,11 +34,12 @@ body{
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    box-shadow: 7px 6px 50px 5px rgba(255, 255, 255, 0.24);
     cursor: pointer;
-    outline: none;
     transition: 0.2s all;
     border-radius: 5px;
+    color: rgb(12, 31, 154);
+    
 }
 
 .main > button:active {
@@ -52,16 +53,11 @@ body{
     background-color: rgba(161, 161, 161, 0.797);
     box-shadow: 3px 2px 22px 1px rgb(0, 0, 0);
    
-   
 }
-
-
 
 .main > h3,h4 {
     margin-top: 20px;
     
 }
-
-
 
 

@@ -7,7 +7,6 @@ import styled from 'styled-components'
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh
-
 `
 
 export const Paragraph = styled.p`
@@ -32,6 +31,5 @@ export const ButtonsDiv = styled.div`
         font-size: 20px;
         font-weight: bold;
     }
-   
 `
 
