@@ -1,0 +1,63 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+body{
+    height: 100vh;
+    background-image: url("./img/space.jpg"); 
+    background-size: cover;
+    animation: bgTransition s linear infinite;
+}
+
+@keyframes bgTransition {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+
+
+.main {
+    color:rgb(255, 255, 255);
+    text-shadow: 3px 3px 7px  rgb(24, 71, 180);
+    margin-top: 15%;
+}
+
+.main > button {
+    margin-top: 20px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 7px 6px 50px 5px rgba(255, 255, 255, 0.24);
+    cursor: pointer;
+    transition: 0.2s all;
+    border-radius: 5px;
+    color: rgb(12, 31, 154);
+    
+}
+
+.main > button:active {
+    background-color: rgba(161, 161, 161, 0.836);
+    outline: none;
+    transform: scale(0.90);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.main > button:hover {
+    background-color: rgba(161, 161, 161, 0.797);
+    box-shadow: 3px 2px 22px 1px rgb(0, 0, 0);
+   
+}
+
+.main > h3,h4 {
+    margin-top: 20px;
+    
+}
+
+
